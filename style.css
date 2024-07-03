@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* hero section */
+
+.hero{
+  background-image: url("images/Homepage-Model-3-Mobile-LHD-v2.avif");
+ height: 100vh;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+}
+
+.menu_btn{
+  margin: 16px;
+  padding:8px 20px 8px 20px;
+  font-size: 14px;
+}
+
+.order{
+  width:90%;
+}
+
+.demo{
+   width:90%;
+
+}
+
+.btns{
+  position: absolute;
+  bottom:70px;
+}
+
+
+/* page 2 */
+
+.page_2{
+  background-image: url("images/Homepage-Model-Y-Mobile-Global.avif");
+   height: 100vh;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+  
+}
+
+/* page 3 */
+
+.page_3{
+  background-image: url("images/Homepage-Model-X-Mobile-v2.avif");
+   height: 100vh;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+  
+}
+
+/* page 4 */
+
+.page_4{
+  background-image: url("images/Homepage-Model-S-Mobile-v2.avif");
+   height: 100vh;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+  
+}
+
+/* page 5 */
+
+.page_5{
+  background-image: url("images/Homepage-Cybertruck-Mobile.avif");
+   height: 100vh;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ position: relative;
+  
+}
+
+
+.cyber_text{
+  width: 300px;
+}
+
+.cyber_order{
+  border-top: 3px solid #4B4B4B;
+}
+
+
+/* Aos */
+
+.autoRotate{
+  animation: autoRotateAnimation;
+  animation-timeline:view();
+}
+
+@keyframes autoRotateAnimation{
+  from{
+    transform: scale(.5);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+
+.autoshow{
+  animation:autoshowAnimation both;
+    animation-timeline:view(70% 5%);
+
+}
+
+@keyframes autoshowAnimation{
+  from{
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }to{
+    opacity: 1;
+    transform: translateY(0) scale(1)
+  };
+}
